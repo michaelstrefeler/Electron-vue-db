@@ -1,0 +1,41 @@
+{
+  "table":{
+    "user":{
+      "user1":{
+        "id":1,
+        "username":"Michael",
+        "password":"@Password!"
+      },
+      "user2":{
+        "id":2,
+        "username":"Admin",
+        "password":"AdminPassword"
+      }
+    },
+    "shoppingList":{
+      "list1":{
+        "id":1,
+        "contents":[
+          "Butter","Eggs","Bacon", "Cheddar cheese"
+        ],
+        "name":"Omelette recipe"
+      },
+      "list2":{
+        "id":2,
+        "contents":[
+          "Screen cleaner", "Microfiber cloth", "Compressed air can"
+        ],
+        "name":"PC cleaning supplies"
+      }
+    },
+    "reminder":{
+      "reminder1":{
+        "id":"1",
+        "title":"Visite ACD",
+        "date":"March 20th",
+        "time":"10:30-11:30",
+        "concernedParty":"Michael"
+      }
+    }
+  }
+}

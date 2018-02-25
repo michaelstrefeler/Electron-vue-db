@@ -16,7 +16,7 @@ export default new Router({
     },
     {
       path: '/more',
-      name: "But wait there's more",
+      name: 'more',
       component: require('@/components/More').default
     }
 

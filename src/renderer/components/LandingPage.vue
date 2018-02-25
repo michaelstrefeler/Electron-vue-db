@@ -1,6 +1,4 @@
 <template>
-  <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
     <main>
       <div class="left-side">
         <span class="title">
@@ -30,7 +28,6 @@
         </div>
       </div>
     </main>
-  </div>
 </template>
 
 <script>

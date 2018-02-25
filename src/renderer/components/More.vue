@@ -1,6 +1,4 @@
 <template>
-  <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
     <main>
       <div class="left-side">
         <span class="title">
@@ -42,7 +40,6 @@
         </div>
       </div>
     </main>
-  </div>
 </template>
 
 <script>
@@ -85,7 +82,7 @@ export default {
         rgba(229, 229, 229, .9) 100%
       );
     height: 100vh;
-    padding: 60px 80px;
+    padding: 20px 80px 60px;
     width: 100vw;
   }
 

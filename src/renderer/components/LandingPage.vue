@@ -23,9 +23,6 @@
           <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
         </div>
         <br>
-        <div>
-            <router-link to="more">But wait there's more...</router-link>
-        </div>
       </div>
     </main>
 </template>

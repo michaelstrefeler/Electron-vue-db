@@ -25,7 +25,7 @@
           <div class="title">About</div>
           <p>
             This is a second component that I made called "more.vue". I'm gonna try to make the strefeld-mgmt website in electron-vue.
-            I think that it's gonna be fun and that I'm gonna learn a lot.
+            I think that it's gonna be fun and that I'm gonna learn a lot. I was wrong
           </p>
           <br>
           <button @click="open('https://github.com/michaelstrefeler')">Go to my Github profile</button><br><br>
@@ -35,9 +35,6 @@
           {{ event.title }} {{ event.date }} {{ event.time }} {{ event.concernedParty }}
         </div>
         <br>
-        <div>
-            <router-link to="/">Go back</router-link>
-        </div>
       </div>
     </main>
 </template>

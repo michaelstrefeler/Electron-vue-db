@@ -33,10 +33,69 @@
     color:black;
     font-size: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
-  .menu{
-    color: blue;
-    text-decoration: none;
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #wrapper {
+    background:
+      radial-gradient(
+        ellipse at top left,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(229, 229, 229, .9) 100%
+      );
+    height: 100vh;
+    padding: 20px 80px 60px;
+    width: 100vw;
+  }
+
+  #logo {
+    height: auto;
+    margin-bottom: 20px;
+    width: 420px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main > div { flex-basis: 50%; }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome {
+    color: #555;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .title.alt {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .doc p {
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .dataTitle{
+    text-decoration: underline;
   }
 </style>

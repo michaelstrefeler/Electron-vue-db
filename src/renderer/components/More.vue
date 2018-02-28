@@ -1,6 +1,6 @@
 <template>
     <main>
-      <div class="left-side">
+    <div class="left-side">
         <span class="title">
           {{ message }}
         </span>
@@ -25,10 +25,10 @@
           <div class="title">About</div>
           <p>
             This is a second component that I made called "more.vue". I'm gonna try to make the strefeld-mgmt website in electron-vue.
-            I think that it's gonna be fun and that I'm gonna learn a lot. I was wrong
+            I think that it's gonna be fun and that I'm gonna learn a lot.
           </p>
           <br>
-          <button @click="open('https://github.com/michaelstrefeler')">Go to my Github profile</button><br><br>
+          <Button type="primary" @click="open('https://github.com/michaelstrefeler')">Go to my Github profile</Button><br><br>
         </div>
         <p class="dataTitle">Reminders</p>
         <div v-for="event in reminders" :key="event.id">
@@ -61,15 +61,11 @@ export default {
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-
-  body { font-family: 'Source Sans Pro', sans-serif; }
 
   #wrapper {
     background:
@@ -122,25 +118,6 @@ export default {
   .doc p {
     color: black;
     margin-bottom: 10px;
-  }
-
-  .doc button {
-    font-size: .8em;
-    cursor: pointer;
-    outline: none;
-    padding: 0.75em 2em;
-    border-radius: 2em;
-    display: inline-block;
-    color: #fff;
-    background-color: #4fc08d;
-    transition: all 0.15s ease;
-    box-sizing: border-box;
-    border: 1px solid #4fc08d;
-  }
-
-  .doc button.alt {
-    color: #42b983;
-    background-color: transparent;
   }
 
   .dataTitle{

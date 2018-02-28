@@ -19,13 +19,6 @@
           "Butter","Eggs","Bacon", "Cheddar cheese"
         ],
         "name":"Omelette recipe"
-      },
-      "list2":{
-        "id":2,
-        "contents":[
-          "Screen cleaner", "Microfiber cloth", "Compressed air can"
-        ],
-        "name":"PC cleaning supplies"
       }
     },
     "reminder":{

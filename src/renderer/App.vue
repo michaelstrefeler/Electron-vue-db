@@ -5,6 +5,7 @@
           <MenuItem name="1">
               <Icon type="home"></Icon>
               Home
+
           </MenuItem>
         </router-link>
         <router-link :to="{ name: 'more' }" class="menu">
@@ -28,6 +29,22 @@
 </script>
 
 <style>
+  .ivu-menu-light {
+    background: black;
+  }
+
+  .ivu-menu-item{
+    color: white !important;
+  }
+
+  .ivu-menu-item-active{
+    color: #2d8cf0 !important;
+  }
+
+  .ivu-menu-horizontal.ivu-menu-light:after{
+    background:black !important;
+  }
+
   body {
     font-weight: 500;
     color:black;
@@ -43,12 +60,12 @@
   }
 
   #wrapper {
-    background:
+    /*background:
       radial-gradient(
         ellipse at top left,
         rgba(255, 255, 255, 1) 40%,
-        rgba(229, 229, 229, .9) 100%
-      );
+        rgba(229, 229, 229, .9) 120%
+      );*/
     height: 100vh;
     padding: 20px 80px 60px;
     width: 100vw;

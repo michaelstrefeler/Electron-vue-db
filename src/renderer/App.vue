@@ -50,7 +50,7 @@
     color:black;
     font-size: 100%;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   * {
@@ -60,12 +60,12 @@
   }
 
   #wrapper {
-    /*background:
+    background:
       radial-gradient(
         ellipse at top left,
         rgba(255, 255, 255, 1) 40%,
         rgba(229, 229, 229, .9) 120%
-      );*/
+      );
     height: 100vh;
     padding: 20px 80px 60px;
     width: 100vw;

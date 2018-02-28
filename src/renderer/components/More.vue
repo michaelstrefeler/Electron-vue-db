@@ -1,26 +1,29 @@
 <template>
+  <Row>
     <main>
-    <div class="left-side">
-        <span class="title">
-          {{ message }}
-        </span>
-        <p>Data from json database :</p>
-        <p class="dataTitle">Users</p>
-        <div v-for="user in users" :key="user.id">
-          {{ user.username }} {{ user.password }}
+    <Col span="12">
+      <span class="title">
+        {{ message }}
+      </span>
+      <p>Data from json database :</p>
+      <p class="dataTitle">Users</p>
+      <div v-for="user in users" :key="user.id">
+        {{ user.username }} {{ user.password }}
+      </div>
+      <br>
+      <p class="dataTitle">Shopping lists</p>
+      <br>
+
+      <div v-for="list in lists" :key="list.id" style="float:left">
+        {{ list.name }} &nbsp&nbsp&nbsp&nbsp
+        <div v-for="item in list.contents" :key="item.id">
+          {{ item }}
         </div>
         <br>
-        <p class="dataTitle">Shopping lists</p>
-        <div v-for="list in lists" :key="list.id">
-          {{ list.name }}:
-          <div v-for="item in list.contents" :key="item.id">
-            {{ item }}
-          </div>
-          <br>
-        </div>
       </div>
+      </Col>
 
-      <div class="right-side">
+      <Col span="12">
         <div class="doc">
           <div class="title">About</div>
           <p>
@@ -35,8 +38,9 @@
           {{ event.title }} {{ event.date }} {{ event.time }} {{ event.concernedParty }}
         </div>
         <br>
-      </div>
+      </Col>
     </main>
+  </Row>
 </template>
 
 <script>

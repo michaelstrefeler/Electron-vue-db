@@ -1,13 +1,14 @@
 <template>
+  <Row>
     <main>
-      <div class="left-side">
+      <Col span="12">
         <span class="title">
           Welcome to your new project!
         </span>
         <system-information></system-information>
-      </div>
+      </Col>
 
-      <div class="right-side">
+      <Col span="12">
         <div class="doc">
           <div class="title">Getting Started</div>
           <p>
@@ -23,8 +24,9 @@
           <Button type="success" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
         </div>
         <br>
-      </div>
+      </Col>
     </main>
+  </Row>
 </template>
 
 <script>
